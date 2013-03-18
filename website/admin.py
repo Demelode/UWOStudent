@@ -1,5 +1,5 @@
 from django.contrib import admin
-from website.models import Announcement, About, Game
+from website.models import Announcement, About
 
 
 class AnnouncementAdmin(admin.ModelAdmin):
