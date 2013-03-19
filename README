@@ -12,3 +12,10 @@ PYTHON TUTORIAL: http://www.tutorialspoint.com/python/index.htm
 DJANGO TUTORIAL: https://docs.djangoproject.com/en/dev/intro/tutorial01/
 
 Ask me any questions.
+
+
+PS: I've left the templating and the basic models/views/admin stuff from one 
+of my other django projects to give you a working example to get started/context
+with. Let me know if you want clarifications on what to look at.
+
+Also, make sure to fork and make your own branch. Lets keep master cleaned.
