@@ -1,6 +1,11 @@
 from django.http import HttpResponse
 from django.shortcuts import render
-from website.models import Announcement, About
+from website.models import Student, TimeTable, Course, ExamSchedule
+from website.models import Exam, Degree, Grade, GradeBook
+
+from website.models import Announcement, About  # remove
+
+##### REMOVE BELOW, FOR TEST PURPOSES #####
 
 
 def main(request):
@@ -21,3 +26,4 @@ def about(request):
     about_list = About.objects.order_by('title')[:1]
     context = {'about_list': about_list}
     return render(request, 'about.html', context)
+##### REMOVE ABOVE, FOR TEST PURPOSES #####
