@@ -1,0 +1,14 @@
+REQUIREMENTS
+
+python installed on computer
+django installed on computer
+anything else in requirements.txt
+you've got to use a terminal to properly develop in django 
+    (things like: >> python manage.py runserver)
+
+Use these resources to understanding the language/toolset:
+
+PYTHON TUTORIAL: http://www.tutorialspoint.com/python/index.htm
+DJANGO TUTORIAL: https://docs.djangoproject.com/en/dev/intro/tutorial01/
+
+Ask me any questions.
