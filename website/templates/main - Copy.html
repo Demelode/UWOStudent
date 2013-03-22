@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block navbar %}
+  <ul class="nav">
+    <li><a href="/play">Play</a></li>
+    <li><a href="/hiscores">Hiscores</a></li>
+    <li><a href="/about">About</a></li>
+  </ul>
+{% endblock%}
+
+{% block leftpanel %}
+  {% for announcement in announcement_list %}
+    <div class="well well-large">
+      <h3>{{announcement.title}}</h3>
+      <h5>{{announcement.body}}</h5>
+      <h6>Posted by {{announcement.poster}} on {{announcement.date}}</h6>
+    </div>
+  {% endfor %}
+{% endblock %}
+
+{% block rightpanel %}
+<img src="http://zytoz.com/img/screen.png"
+            style=" width: 250px; height: 250px;">
+<div class='imgside'>
+  <img src="http://zytoz.com/img/screen2.png"
+            style=" width: 250px; height: 250px;">
+</div>
+{% endblock %}
