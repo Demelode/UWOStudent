@@ -80,7 +80,7 @@ class Student(models.Model):
     last_name = models.CharField(max_length=20)
     address = models.CharField(max_length=100)
     postal_code = models.CharField(max_length=6)
-    student_number = models.CharField(max_length=10)  # Should it be char?
+    student_number = models.CharField(max_length=10)  # Should it be char? Mark: No, it's a numeric field
 
     visa_exp_date = models.DateField(blank=True)
     visa_type = models.CharField(max_length=20, blank=True)
@@ -95,7 +95,7 @@ class Student(models.Model):
     time_table = models.ForeignKey(TimeTable)
     exam_schedule = models.ForeignKey(ExamSchedule)
 
-    password = models.CharField(max_length=30)  # How should this be done?
+    password = models.CharField(max_length=30)  # How should this be done? Mark: Alphanumeric encrypted MD5?
 
     def get_full_name(self):
         return first_name + " " + last_name

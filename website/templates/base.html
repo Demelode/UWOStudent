@@ -6,26 +6,26 @@
   <!-- Bootstrap -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
-  <link href="/assets/css/bootstrap.css" rel="stylesheet" media="screen">
-  <link href="/assets/css/style.css" rel="stylesheet" media="screen">
+  <link rel="stylesheet" type="text/css" href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" />
+css" />
+  <link href="http://4474.moberemk.com/css/style.css" rel="stylesheet" media="screen">
 </head>
 <body>
   <div id="top" class="clearfix">
     <div id="sidebar">
       <img id="user" src="img/default.jpg" alt="John Smith" />
-      <h2>John Smith</h2>
-        <h3>2nd year, Faculty of Science</h3>
+      <h2>{%  %}</h2>
+        <h3>{% %}</h3>
         <p>Honors Specialization in Computer Science</p>
     </div>
     <h1>Student Center</h1>
 
   </div>
   <div id="subpage_content" class="subpage">
-    <div class="content_box">
-      <h2>Your Information</h2>
-    </div>
+      {% block content %}
+      {% endblock %}
   </div>
   <script src="http://code.jquery.com/jquery.js"></script>
-  <script src="/assets/js/bootstrap.min.js"></script>
+  <script src="http://4474.moberemk.com/js/bootstrap.min.js"></script>
 </body>
 </html>
