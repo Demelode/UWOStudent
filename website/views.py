@@ -13,17 +13,15 @@ def main(request):
     context = {'announcement_list': announcement_list}
     return render(request, 'main.html', context)
 
+def user(request):
+	return render(request, 'user.html')
 
-def play(request):
-    return render(request, 'play.html')
+def login(request):
+    m = Student.objects.get(username=request.POST['username'])
+    if m.password == request.POST['password']:
+        request.session['member_id'] = m.id
+        return HttpResponse("You're logged in.")
+    else:
+        return HttpResponse("Your username and password didn't match.")
 
-
-def hiscores(request):
-    return render(request, 'hiscores.html')
-
-
-def about(request):
-    about_list = About.objects.order_by('title')[:1]
-    context = {'about_list': about_list}
-    return render(request, 'about.html', context)
 ##### REMOVE ABOVE, FOR TEST PURPOSES #####
